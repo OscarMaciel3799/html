@@ -1,0 +1,69 @@
+<!--
+Las tablas en HTML se utilizan para mostrar datos en forma de filas y columnas, 
+como si fuera una hoja de cálculo.
+Etiquetas:
+<table>	Contenedor general de la tabla.
+<tr>	Fila (table row).
+<th>	Encabezado de columna (table heading). Se muestra en negrita y centrado por defecto.
+<td>	Celda de datos (table data).
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de tabla</title>
+</head>
+<body>
+  <h1>Lista de productos</h1>
+  <table border="1">
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Stock</th>
+    </tr>
+    <tr>
+      <td>Manzana</td>
+      <td>$100</td>
+      <td>Disponible</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>$80</td>
+      <td>Agotado</td>
+    </tr>
+  </table>
+<!-- Tambien podemos combinar celdas
+ Para ello usamos los atributos colspan y/o rowspan
+colspan: permite que una celda ocupe varias columnas.
+rowspan: permite que una celda ocupe varias filas.
+ -->
+  <h2>Tabla con celdas combinadas</h2>
+  <table border="1">
+    <tr>
+      <th colspan="3">Reporte de ventas</th>
+    </tr>
+    <tr>
+      <th>Producto</th>
+      <th>Mes</th>
+      <th>Ventas</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Manzana</td>
+      <td>Enero</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>Febrero</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total</td>
+      <td>270</td>
+    </tr>
+  </table>
+  
+</body>
+</html>
+
+
+  

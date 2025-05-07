@@ -1,0 +1,92 @@
+<!--
+ Semántica en HTML
+HTML semántico significa usar etiquetas que describen claramente su significado.
+
+Ejemplos comunes:
+
+<header>    	Encabezado del sitio o sección
+<nav>	        Menú de navegación
+<main>	        Contenido principal
+<section>   	Secciones temáticas
+<article>	    Contenido independiente (ej. blog post)
+<aside>	        Contenido relacionado o extra
+<footer>	    Pie de página
+
+Atributos globales útiles:
+
+id	        Identificador único
+class	    Categoría reutilizable para CSS o JS
+title	    Información extra al pasar el mouse
+hidden	    Oculta el elemento
+lang	    Idioma del contenido
+tabindex	Orden de tabulación
+aria-*	    Accesibilidad
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejemplo de HTML semántico con multimedia">
+  <title>HTML Avanzado</title>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Sitio de Práctica</h1>
+    <p>Aprendiendo HTML con ejemplos prácticos</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Artículos</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Artículo principal</h2>
+      <article>
+        <h3>¿Qué es HTML semántico?</h3>
+        <p>HTML semántico mejora la estructura del contenido y la accesibilidad del sitio web.</p>
+        <img src="https://i.pinimg.com/736x/02/6a/21/026a21262875482450455707ad1c7346.jpg" alt="Ejemplo de imagen" style="max-width: 100%;">
+      </article>
+    </section>
+
+    <section>
+      <h2>Contenido multimedia</h2>
+      <h3>Video de práctica</h3>
+      <video controls width="100%" style="max-width: 600px;">
+        <source src="video-ejemplo.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+      </video>
+
+      <h3>Audio explicativo</h3>
+      <audio controls>
+        <source src="audio-ejemplo.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir este audio.
+      </audio>
+    </section>
+
+    <aside>
+      <h2>Contenido relacionado</h2>
+      <p>Visita nuestro canal de YouTube:</p>
+      <iframe 
+        width="300" 
+        height="200" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video"
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
